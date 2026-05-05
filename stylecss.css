@@ -186,6 +186,8 @@ header nav ul {
 	cursor: pointer;
 	transition: background-color 0.3s;
 	width: 180px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 .btn:hover {
@@ -695,130 +697,157 @@ footer .container {
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 5px;
-	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	animation: slideLeft 1.5s ease-out forwards;
 }
-.about-section{
-	background-color: #f5e9e2;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-}
+.about-section {
+    background-color: #f5e9e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+  }
+  
+  .text-about {
+    max-width: 900px;
+    text-align: center;
+    color: #1a2340;
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+  
+  /* Top italic sentence */
+  .intro-line {
+    font-style: italic;
+    font-size: 28px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: #1a2340;
+  }
+  
+  /* Main bold statements */
+  .main-line {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 10px 0;
+  }
+  
+  /* Divider line */
+  .divider {
+    width: 60px;
+    height: 2px;
+    background-color: #1a2340;
+    margin: 30px auto;
+  }
+  
+  /* Bottom small caps line */
+  .closing-line {
+    margin-top: 50px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #8c7a5b;
+  }
+  
+  .closing-line span {
+    color: #ba8d4f;
+  }
 
-.text-about{
-	border: solid 2px #ba8d4f;
-	padding: 20px;
-	font-size: 30px;
-	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	width: 70%;
-	text-align: center;
-	margin: 70px auto;
-}
-
-/* Container Setup */
-.content {
-	max-width: 900px;
-	margin: 100px auto;
-	padding: 0 20px;
-	font-family: 'Inter', -apple-system, sans-serif; /* Clean sans-serif */
-	line-height: 1.6;
-	color: #020c45;;
+  .why-section {
+    background-color: #f5efe9;
+    padding: 100px 20px;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #1a2340;
   }
   
-  /* Section 1: The "Multiplier" Hero */
-  .content-title:first-of-type {
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	font-size: clamp(3rem, 8vw, 5rem);
-	margin-bottom: 1rem;
-	letter-spacing: -2px;
-	color: #020c45;;
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
   }
   
-  /* Special styling for the "Multiplier" sentence */
-  .content-text:first-of-type {
-	font-size: 1.5rem;
-	font-weight: 300;
-	max-width: 600px;
-	margin-bottom: 4rem;
-	border-left: 4px solid #ba8d4f; /* Accents the 'power' aspect */
-	padding-left: 24px;
-	transition: transform 0.4s ease;
+  /* Top label */
+  .eyebrow {
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #b59b6a;
+    margin-bottom: 20px;
   }
   
-  .content-text:first-of-type:hover {
-	transform: translateX(10px);
-	color: #ba8d4f;
+  /* Main headline */
+  .headline {
+    font-size: 64px;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 60px;
   }
   
-  /* Section 2: The Definition (Grid Layout) */
-  .content-text:nth-of-type(2) {
-	display: grid;
-	grid-template-columns: 1fr 2.5fr;
-	width: 70%;
-	align-items: start;
-	margin-bottom: 200px;
-	margin-left: 150px;
-
+  .headline span {
+    font-style: italic;
+    color: #b59b6a;
   }
   
-  .content-text:nth-of-type(2) strong {
-	font-size: 2.5rem;
-	font-family: "Playfair Display", serif;
-	display: block;
-	line-height: 1;
-  }
-  
-  .content-title:last-of-type {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: clamp(1.5rem, 6vw, 3.5rem); /* Scalable huge text */
-    line-height: 1.1;
-    margin: 30px 0px;
-    color: #020c45;
-    letter-spacing: -1.5px;
-    border-top: none; /* Removing the old divider for more "flow" */
-    padding-top: 0;
-}
-
-/* The Answer: High-Impact "Focus" Box */
-.content-text:last-of-type {
-    position: relative;
-    font-size: clamp(1.2rem, 3vw, 1.8rem);
-    font-weight: 400;
-    line-height: 1.5;
-    color: #020c45;
-    max-width: 100%;
-    
-    /* Creating a creative 'Offset' look */
+  /* Quote box */
+  .quote-box {
+    border: 1px solid #b59b6a;
     padding: 60px;
-    background-color:#f5e9e2;  /* Very soft parchment/cream */
-    border-left: 8px solid #020c45;
-    
-    /* Subtle texture effect */
-    background-image: radial-gradient(#d1d1d1 0.5px, transparent 0.5px);
-    background-size: 20px 20px;
-}
-
-/* Optional: Add a "floating" decorative element */
-.content-text:last-of-type::before {
+    margin-bottom: 0;
+    position: relative;
+  }
+  
+  .quote-box p {
+    font-style: italic;
+    font-size: 22px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: 40px;
+  }
+  
+  /* Vertical accent line */
+  .quote-box::before {
+    content: "";
     position: absolute;
-    top: -15px;
     left: 40px;
-    background: #ba8d4f; /* Matches your accent color */
-    color: #020c45;
-    padding: 4px 12px;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 100;
-}
+    top: 60px;
+    width: 2px;
+    height: 60px;
+    background-color: #b59b6a;
+  }
+  
+  /* Grid section */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: none; /* keeps it aligned with quote box above */
+  }
+  
 
-/* Hover effect to make it feel "Intentional" */
-.content-text:last-of-type:hover {
-    background-color: #f5e9e2;;
-    box-shadow: 20px 20px 0px #ba8d4f; /* Soft accent shadow */
-    transform: translateY(-5px);
-    transition: all 0.4s ease;
-}
+  
+  .about-card {
+    padding: 60px;
+    border: 1px solid #b59b6a;
+  }
+  
+
+  
+  /* Large faded numbers */
+  .number {
+    font-size: 80px;
+    color: #b8aa97;
+    margin-bottom: 20px;
+  }
+  
+  /* Card titles */
+  .card h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  
+  /* Body text */
+  .card p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #5a5f6a;
+  }
 
 /* --- THIRD SECTION: GET IN TOUCH --- */
 
