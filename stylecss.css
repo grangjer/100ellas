@@ -711,7 +711,7 @@ footer .container {
   .text-about {
     max-width: 900px;
     text-align: center;
-    color: #1a2340;
+    color: #020c45;
     font-family: Georgia, 'Times New Roman', serif;
   }
   
@@ -721,7 +721,7 @@ footer .container {
     font-size: 28px;
     line-height: 1.6;
     margin-bottom: 40px;
-    color: #1a2340;
+    color: #020c45;
   }
   
   /* Main bold statements */
@@ -736,7 +736,7 @@ footer .container {
   .divider {
     width: 60px;
     height: 2px;
-    background-color: #1a2340;
+    background-color: #020c45;
     margin: 30px auto;
   }
   
@@ -819,8 +819,6 @@ footer .container {
     border-top: none; /* keeps it aligned with quote box above */
   }
   
-
-  
   .about-card {
     padding: 60px;
     border: 1px solid #b59b6a;
@@ -833,20 +831,61 @@ footer .container {
     font-size: 80px;
     color: #b8aa97;
     margin-bottom: 20px;
-  }
+        transition: color 0.35s ease, transform 0.35s ease;
+      }
+
   
   /* Card titles */
-  .card h3 {
+  .about-card h3 {
     font-size: 26px;
     margin-bottom: 20px;
   }
   
   /* Body text */
-  .card p {
-    font-family: 'Inter', sans-serif;
+  .about-card p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     line-height: 1.7;
     color: #5a5f6a;
+  }
+
+  .about-card {
+    transition: transform 0.35s ease, background-color 0.35s ease;
+  }
+  
+  .about-card:hover {
+    transform: translateY(-6px);
+    background-color: #f8f3ee; /* slightly lighter than background */
+  }
+  
+  .about-card:hover .number {
+    color: #b59b6a;
+    transform: translateY(-4px);
+  }
+
+  .about-card h3 {
+    transition: color 0.3s ease;
+  }
+  
+  .about-card:hover h3 {
+    color: #020c45;
+  }
+  .quote-box {
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+  }
+  
+  .quote-box:hover {
+    background-color: #f8f3ee;
+    border-color: #d6c7b5;
+  }
+
+  .quote-box::before {
+    transition: height 0.4s ease, background-color 0.4s ease;
+  }
+  
+  .quote-box:hover::before {
+    height: 80px;
+    background-color: #b59b6a;
   }
 
 /* --- THIRD SECTION: GET IN TOUCH --- */
