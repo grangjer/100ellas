@@ -172,11 +172,11 @@ header nav ul {
 
 .impact-section .buttons {
 	display: flex;
-	gap: 100px;
+	gap: 30px;
 }
 
 .btn{
-	font-size: 18px;
+	font-size: 16px;
 	text-transform: uppercase;
 	text-decoration: solid;
 	margin-top: 40px;
@@ -189,7 +189,7 @@ header nav ul {
 	border-radius: 10px;
 	cursor: pointer;
 	transition: background-color 0.3s;
-	width: 180px;
+	width: 150px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
@@ -412,7 +412,7 @@ header nav ul {
 /* See More Button */
 
 .see-more{
-	font-size: 18px;
+	font-size: 16px;
 	text-transform: uppercase;
 	text-decoration: solid;
 	margin-top: 20px;
@@ -425,8 +425,9 @@ header nav ul {
 	border-radius: 10px;
 	cursor: pointer;
 	transition: background-color 0.3s;
-	width: 200px;
+	width: 150px;
 	margin-bottom: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .see-more:hover {
